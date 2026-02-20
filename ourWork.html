@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work</title><!--The title tag used on the name of the page; Our Work-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--(Contributors, n.d.)-->
+     <link rel="stylesheet" href="css/Styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" data-theme="dark"> <!--using data attributes (developer.mozilla, 2024)-->
+        <!-- "navbar-expand" is a class from bootstrap used to controll when the navbar expands(displays a horizotal menu) / shrinks(displays a stacked)-->
+        <!--In this case "md" means 768px, meaning that should the page shrink past 768px the navbar will shrink, and vise versa (contributors, n.d.)-->
+        <div class="container">
+            <a class="navbar-brand" href="homePage.html">KA-Arts</a>
+            <!--Adding a hamburgur menu using bootstrap(contributors, n.d.)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="tab-item">
+                        <a class="tab-links" href="homePage.html">Home Page </a><!--These "a" tags are for applying links to the webpage. This allows for navigation across the website(The IIE, 2024) -->
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="aboutUs.html">About Us </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="ourWork.html">Our Work </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="gallery.html">Gallery </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="contactUs.html">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav><!--The navigation bar used to allow access to the different webpages available-->
+
+    
+       
+    
+    <section class="section-light" data-theme="light">
+        <a href="homePage.html"><!--Internal link to the website's home page (The IIE, 2024)-->
+            <img class="logo-image" src="Images/KA-Arts.png"> <!-- The logo acting as the link to the homepage as demonstrated by (The IIE, 2024)-->
+        </a>
+
+        <h1 class="heading">OUR WORK</h1><!--Heading Tag-->
+
+        <div class="introduction">
+            <div class="row">
+               <div class="col">
+                    <center><H2><u>How We Operate</u></H2></center><br><br>
+                    <p>
+                        At KA Art Gallery, we're focused on uplifting local artistsa and muturing creativity in our community. <br> From hosting monthly exhibitions to offering hands-on workshops.<br>By providing a platform to showcase work and develop their skills,<br> We inspire and support the next generation of creative talent
+                    </p>
+                    <a href="contactUs.html" class="btn btn-dark btn-lg" data-theme="dark">Join Us</a><!--"btn btn-dark btn-lg" are classes used to create, a clickable button-->
+                                                                                    <!--"btn" adds padding, border, border-radius and background color to the element(a)
+                                                                                    "btn-dark" give that button a dark background color and "btn-lg" makes the button large,--><!--(Contributors, n.d.)-->
+               </div>
+                <!--center tag for the Sub-Heading used in the text-->
+                <div class="col">
+                    <img class = intro-image  src="Images/KA-arts _musuem interior.jpg" width="500rem" height="300px"><!--(Pixabay, 2024)-->
+                </div>                                                                 
+            </div>
+        
+            
+        </div>  
+       
+    </section>
+
+    <section class="section-dark text-light" data-theme="dark"><!--the "text-light class helps make use of lighter colors to contrast againts its background"-->
+        <center><h2><u>What We Do</u></h2></center>
+        <center>
+            <p>Workshops are hosted on weekends, to educate those who want to learn.<br> We host different types of lessons every weekend. <br> Live model classes, How to use watercolor, oil and acrylic paints,<br> how to market artworks on different platforms and expose them to established artists to learn from.</p>
+        </center>
+        <div class="row"><!--(Contributors, n.d.)-->
+            <div class="col"><iframe width="350" height="250" src="https://www.youtube.com/embed/yxRLfpwfCP0" title="Landscape Sketching series - Visual Arts Centre Zoom Live Art Class" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Visual Arts Center Singapore, 2020)--></div>
+            <div class="col"><iframe width="350" height="250" src="https://www.youtube.com/embed/-07e6L93pF4" title="Why You Don’t Get Contemporary Art | Jessica Backus | TEDxCornellTech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Backus,2016)--></div>
+            <div class="col"><iframe width="350" height="250" src="https://www.youtube.com/embed/PwYewBMlkJw" title="Global Gallery Tour 20th Century &amp; Contemporary Art | New York | June 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Philips, 2021)--></div>
+        </div>
+    </section>
+
+    <section class="section-light" data-theme="light">
+        <center><h2><u>Our Activities</u></h2></center>
+        
+        <div class="row"><!--(Contributors, n.d.)-->
+            <div class="col"><Center><h3>Hosting Exhibitions</h3></Center>
+                <p>Every month we use all the collection of artworks sent towards us and created in our own studio,<br> and showcase them to the public.This way art enthusiats can see the work of local artists,<br> giving them attention and helping them progress into becoming established artists in the community.</p> 
+            </div>
+            <div class="col"><center><h3>Workshops</h3></center>
+               <p>Workshops are hosted on weekends, to educate those who want to learn.<br> We host different types of lessons every weekend. <br>Live model classes, How to use watercolor, oil and acrylic paints,<br> how to market artworks on different platforms and expose them to established artists to learn from.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-dark text-light" data-theme="dark">
+        <footer>
+    
+            <div class="footer-links">
+                <!--The other platforms that the user can access-->
+                
+                <a href="https://www.instagram.com/kwaz.arts/" target="_blank"> 
+                    <img class="platform-link" src="Images/instagram (1).png">
+                </a>
+                <a href="https://web.facebook.com/kwaz.arts?_rdc=1&_rdr" target="_blank">
+                    <img class="platform-link" src="Images/facebook.png">
+                </a>
+                <a href="https://www.inprnt.com/gallery/kwazarts/" target="_blank">
+                    <img class="platform-link" src="Images/Inprnt.png">
+                </a>
+            </div>
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write("Lwazi Magaba ST10434465 | Last modified:")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br> Powered by "Sharp-Sharp" Web Hosting
+        </footer>  <!--Footer tag used to place student details at the bottom of the page--> <!--(The IIE, 2024)-->
+    </section>
+    <script src="javaScript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+<!--Reference List
+The IIE. 2024. Web Development (Introduction)[WEDE5020 Module Manual].
+ The Independent Institute of Education: Unpublished.
+
+Pixabay. 2024. Museum Egypt . [online] Available at: https://pixabay.com/photos/museum-egypt-sculpture-ancient-4687902/ 
+[Accessed 15 Aug. 2024].
+
+Global Gallery Tour 20th Century & Contemporary Art | New York | June 2021 - Philips. 2021. [online]. www.youtube.com. Available at: https://www.youtube.com/embed/PwYewBMlkJw
+ [Accessed 15 Aug. 2024].
+
+Why You Don’t Get Contemporary Art - Jessica Backus. 2016.[online] www.youtube.com. Available at: https://www.youtube.com/embed/-07e6L93pF4
+[Accessed 15 Aug. 2024].
+
+Landscape Sketching series - Visual Arts Centre Zoom Live Art Class- Visual Arts Center Singapore. 2020. [online] www.youtube.com. Available at: https://www.youtube.com/embed/yxRLfpwfCP0
+[Accessed 15 Aug. 2024].
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Buttons. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/components/buttons/#button-tags 
+[Accessed 26 Sep. 2024].
+
+Contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). row columns. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/layout/grid/#row-columns 
+[Accessed 26 Sep. 2024].
+
+Contributors, B. (n.d.). Quick Start. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start 
+[Accessed 26 Sep. 2024].
+
+developer.mozilla. 2024. Using data attributes - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes [Accessed 5 Nov. 2024].
+ 
+-->

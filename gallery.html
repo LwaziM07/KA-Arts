@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Savour the works of our Art Galley">
+    <meta name="description" content="This page serves to show off the curated artworks by the artists who've had their work curated by KA-Arts, having the most captivating piece displayed for all to see.">
+    <title>Gallery</title><!--The title tag used on the name of the page; Gallery-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--(contributors, n.d.)-->
+     <link rel="stylesheet" href="css/Styles.css">
+
+     <script src="javascript/jquery-1.10.2.min.js"></script> <!-- JavaScript files for the photo gallery -->
+    <script src="javascript/lightbox-2.6.min.js"></script> <!-- JavaScript files for the photo gallery -->
+    <script src="javascript/modernizr.custom.js"></script> <!-- JavaScript files for the photo gallery -->
+
+    <link rel="stylesheet" href="css/lightbox.css" media="screen"/> <!-- Link to external CSS  for CSS on the photo gallery-->
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" data-theme="dark"> <!--using data attributes (developer.mozilla, 2024)--> 
+        <!-- "navbar-expand" is a class from bootstrap used to controll when the navbar expands(displays a horizotal menu) / shrinks(displays a stacked)-->
+        <!--In this case "md" means 768px, meaning that should the page shrink past 768px the navbar will shrink, and vise versa (contributors, n.d.)-->
+        <div class="container">
+            <a class="navbar-brand" href="homePage.html">KA-Arts</a>
+            <!--Adding a hamburgur menu using bootstrap(contributors, n.d.)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="tab-item">
+                        <a class="tab-links" href="homePage.html">Home Page </a><!--These "a" tags are for applying links to the webpage. This allows for navigation across the website(The IIE, 2024) -->
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="aboutUs.html">About Us </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="ourWork.html">Our Work </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="gallery.html">Gallery </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="contactUs.html">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav><!--The navigation bar used to allow access to the different webpages available-->
+    
+
+    
+    <section class="section-light" data-theme="light">
+        <a href="homePage.html"><!--Internal link to the website's home page (The IIE, 2024)-->
+            <img class="logo-image" src="Images/KA-Arts.png"> <!-- The logo acting as the link to the homepage as demonstrated by (The IIE, 2024)-->
+        </a>
+
+        <h1 class="heading">Gallery</h1>
+
+        <div class="row"><!--(Contributors, n.d.)-->
+            <div class="col">
+                <center><h2><u>Enjoy Our Collections</u></h2></center><br>
+
+                <p class="container-text">Join our our world by taking a look at our gallery, here all the pieces created by iut artists are selected and curated for display. Look at the wonders created by some of our artists made with excellent quality. Browse through our collections and see if you can submit work that deserves our spotlight!</p>
+            </div>
+
+            <div class="col">
+                <div class="art-grid">
+
+                    <div class="art-piece"> 
+                        <a href="Images/Juice_Drinker.jpg" data-lightbox ="Art by Kwazi" title="Juice Drinker by Kwazi Magaba"><img class="main-art-piece" src="Images/Juice_Drinker.jpg" alt="Image_of_the_juice_drinker_by_kwazi_magaba"></a>
+                    </div>
+    
+                    <div class="art-piece"> 
+                        <a href="Images/mirror_pic.jpg" data-lightbox = "Art by Kwazi" title="Mirror by Kwazi Magaba"><img class="main-art-piece" src="Images/mirror_pic.jpg" alt="lady_in_the_mirror_by_Kwazi_Magaba"></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+ 
+    </section>
+    
+    <section class="section-dark" data-theme="dark">
+
+            <div class="featured-artworks">
+                <h3>This weeks featured Artworks</h3>
+                
+                <div class="art-grid">
+                    <div class="art-piece"> 
+                        <a href="Images/Morgana_backside.jpg" data-lightbox="Art by Lwazi" title="Morgana's Glory by Lwazi Magaba"><img  src ="Images/Morgana_backside.jpg" alt="Morgana's_establishing_perspective_drawn_By_Lwazi_Magaba"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/court_of_faeries_katarina_by_kwaziarts_dfs0s21.jpg" data-lightbox="Art by Lwazi" title="Court of Fairies by Lwazi Magaba"><img src ="Images/court_of_faeries_katarina_by_kwaziarts_dfs0s21.jpg" alt="The court_of_fairies_illustration_drawn_by_Lwazi_Magaba"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/ikali_rain.jpg" data-lightbox="Art by Lwazi" title="Rain's Somber by Lwazi Magaba"><img src ="Images/ikali_rain.jpg" alt="Ikali_in_The_Rain_Drawn_By_Lwazi_Magaba"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/Happy_Person.jpg" data-lightbox="Art by Lwazi" title="Happy by Lwazi Magaba"><img src ="Images/Happy_Person.jpg" alt="A_Happy_figure_drawn_by_Lwazi_Magaba"></a>
+                    </div>
+                </div>
+
+            </div><br>
+ 
+            <div class="Favoured-Artworks">
+                <h3>Most Favored Pieces</h3>
+                
+                <div class="art-grid">
+                    <div class="art-piece"> 
+                        <a href="Images/burger_Munch.jpg" data-lightbox="Art by Rone" title="Foodie by Rone"><img src ="Images/burger_Munch.jpg" alt="Painting_of_a_foodie_by_Rone"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/morgana_closeup.jpg" data-lightbox="Art by Kwazi" title="Her Majesty by Kwazi Magaba"><img src ="Images/morgana_closeup.jpg" alt="Painting_Morgana_upclose_by_Kwazi_Magaba"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/theOC.jpg" data-lightbox="Art by Kwazi" title="Me... by Kwazi Magaba"><img src ="Images/theOC.jpg" alt="The_original_character_generated_Kwazi_Magaba"></a>
+                    </div>
+                    <div class="art-piece"> 
+                        <a href="Images/amane.jpg" data-lightbox="Art by Kwazi" title="Amane by Kwazi Magaba"> <img src ="Images/amane.jpg" alt="The_painting_Amane_By_Kwazi_Magaba"> </a>
+                    </div>
+                </div>
+               
+      
+            </div><!--A div is used to separate content into sections(GeeksforGeeks, 2018)-->
+       
+    </section>
+        
+    <section class="section-light" data-theme="light">
+        <h2>Our Tours</h2>
+
+        <div class="row"><!--Places the content into horizontal columns-->
+            <div class="tour-video col"><!--places the content into columns--><!--(contributors, n.d.)-->        
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/WPNpJQxEf18" title="Gallery Tour: Editions | London | January 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Phillips, 2021)-->
+            </div>
+            <div class="tour-video col">        
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/Tx2cb-zj9a4" title="Gallery Tour: Editions | London | June 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Phillips, 2023)-->
+            </div>
+            <div class="tour-video col">        
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/mUSoslNBJpw" title="Gallery Tour: 20th Century &amp; Contemporary Art | London | June 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--(Phillips, 2022)-->
+            </div>
+        </div> 
+    </section>
+
+    <section class="section-dark" data-theme="dark">
+        <footer>
+            
+            <div class="footer-links">
+                <!--The other platforms that the user can access-->
+                
+                <a href="https://www.instagram.com/kwaz.arts/" target="_blank"> 
+                    <img class="platform-link" src="Images/instagram (1).png">
+                </a>
+                <a href="https://web.facebook.com/kwaz.arts?_rdc=1&_rdr" target="_blank">
+                    <img class="platform-link" src="Images/facebook.png">
+                </a>
+                <a href="https://www.inprnt.com/gallery/kwazarts/" target="_blank">
+                    <img class="platform-link" src="Images/Inprnt.png">
+                </a>
+            </div>
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write("Lwazi Magaba ST10434465 | Last modified:")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br> Powered by "Sharp-Sharp" Web Hosting
+        </footer><!--Footer tag used to place student details at the bottom of the page--> <!--(The IIE, 2024)-->
+    </section>
+    <script src="javaScript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
+
+<!--Reference List
+
+The IIE. 2024. Web Development (Introduction)[WEDE5020 Module Manual].
+ The Independent Institute of Education: Unpublished.
+
+GeeksforGeeks. 2018. HTML | Div Tag. [online] Available at: https://www.geeksforgeeks.org/div-tag-html/ [Accessed 15 Aug. 2024].
+
+Phillips. 2023. Gallery Tour: Editions | London | June 2023. [online] www.youtube.com. Available at: https://www.youtube.com/embed/Tx2cb-zj9a4
+ [Accessed 15 Aug. 2024].
+
+Gallery Tour: 20th Century & Contemporary Art | London | June 2022- Phillips. 2022. [online]. www.youtube.com. Available at: https://www.youtube.com/embed/mUSoslNBJpw
+ [Accessed 15 Aug. 2024].
+
+ Gallery Tour: Editions | London | January 2021 - Phillips. 2021. [online]. www.youtube.com. Available at: https://www.youtube.com/embed/WPNpJQxEf18 
+[Accessed 15 Aug. 2024].
+
+Magaba, K. 2024.Amane. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024.Burger Munch. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Court of faeries katarina. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Happy Person. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Akali Rain. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Juice Drinker. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Kaisa. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Mirror Pic. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Morgana (backside). [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Morgana (closeup). [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. The OC. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+Magaba, K. 2024. Sketch Image. [Personal Drawing].
+Port Elizabeth: Unpublished
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Columns. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/layout/columns/ 
+[Accessed 26 Sep. 2024].
+
+Contributors, B. (n.d.). Quick Start. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start 
+[Accessed 26 Sep. 2024].
+
+developer.mozilla. 2024. Using data attributes - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes [Accessed 5 Nov. 2024].
+
+-->

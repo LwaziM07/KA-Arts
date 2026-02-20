@@ -1,0 +1,649 @@
+/*Desktop Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');/*(Google Fonts, n.d.)*/
+
+@media screen and (min-width:768px) {
+    html, body{
+        cursor:none;
+    }
+    .cursor{
+        position: absolute;
+        width: 20px;
+        height:20px;
+        border-radius:50%;
+        background-color: rgba(255,255,255,07);
+        pointer-events: none; /* used to set wether an element should react to a pointer event or not.(W3schools, 2024)*/
+        animation: fade-out 0.4s ease-out forwards;
+        z-index:1000; /*Sets the cursor above all of the webpage content, incase it moves behind any of the elemenst*/
+    }
+
+    @keyframes fade-out{
+                /* Keyframes are used to change an elements style from one css element style to another(W3schools, 2024)*/
+        from{
+            transform:scale(1);
+            opacity: 1;
+        }
+        to{
+            transform: scale(2);
+            opacity:0;
+        }
+    }
+    h1{
+        font-family:Merriweather, sans-serif;
+         font-size: 32;
+    }
+
+    h2{
+        font-family:Merriweather, sans-serif;
+        font-size: 28;
+    }
+
+    h3{
+        font-family:Merriweather, sans-serif;
+        font-size: 28;
+    }
+
+    p{
+        font-family:roboto,sans-serif ; font-size: 18;
+    }
+    .tab-links{font-family: Monserrat, sans-serif;}
+    
+
+    .navbar{
+        background-color: black;
+        padding: 25px;
+    }
+    .collapse{
+        transition: height 0.3s ease;
+    }
+
+    .intro-container{
+        text-align: center;
+    }
+    .intro-image{
+        width: 100%;
+    }
+    .logo-image{
+        height:150px ;
+        width:150px;
+        border-radius: 50%;
+        object-fit: cover; /*This property specifies how visual content should be resized to fit its container (www.w3schools.com, n.d.)*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .tab-item{
+        list-style-type: none; /*This property specifies the type of list item marker that's placed in a list (W3schools.com, 2024)*/
+    }
+    .tab-links{
+        color: aqua;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family:Merriweather, sans-serif;
+        font-weight: 650;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;/* (W3Schools, 2024) */
+    }
+    .navbar-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+       
+    }
+    .navbar-nav a {
+        text-decoration: none;
+    }
+    .navbar-nav a:hover{
+        background-color: rgb(108, 223, 223);
+        color: black;
+        border-radius: 5px;
+        text-decoration: none;
+        transform: scale(1.1);
+    
+    }
+    .navbar-brand{
+        display: none;
+    }
+    
+    .introduction{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    
+    .section-light{
+        background-color:azure;
+        padding: 2rem;
+        text-align: center;
+    }
+    .section-dark{
+        background-color: black;
+        padding: 2rem;
+        text-align: center;
+        color: azure;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        gap:10px;/*This property defines the size of the gap between the rows and columns in a flexbox*/
+        padding:15px;
+    }
+    .col{
+        flex:1;
+        min-width: 300px;
+    }
+    .map{
+        border-radius: 8px;
+        width: 100%;
+        height: 320px;
+    }
+    
+    .heading{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    
+    .events{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .g-form{
+        margin-top: 3rem;
+    }
+    .Join{
+        margin-top: 3rem;
+        margin: 5rem;
+        margin-bottom: 1rem;
+    }
+    .Vision-text{
+        float: left;
+    }
+    
+    .Vision-content{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+    .au-image{
+        float: right;
+        height: 300px;
+        width:500px;
+    }
+    
+    .art-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
+        justify-content: center;
+        /*this property is used to help accomodate the number of columns that can be adjusted 
+        whenever the screensize changes* where each column is 250px wide but can grow to fill any remaining spaces in the container./
+        (www.w3schools.com, n.d.)*/
+    }
+    
+    .art-grid img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        max-height: 300px;
+        margin: 10px; 
+        transition: 0.3s ease-in-out;
+    }
+
+    .main-art-piece{
+        height:350px; 
+        width:250px;
+        border-radius: 8px;
+    }
+    .art-grid img:hover{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        max-height: 320px;
+        margin: 10px;
+
+    }
+    .most-viewed-pieces{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .featured-artworks{
+        background-color: black;
+        padding: 40px;
+    }
+    .Favoured-Artworks{
+        background-color: black;
+        padding: 40px;
+    }
+    .card{
+    background-color:white ;
+    }
+    .card-body{
+        text-align: center;
+    }
+    .card-title{
+    margin-bottom: 3rem;
+    }
+    .contributor{
+        height:150px ;
+        width:150px;
+        border-radius: 50%;
+    }
+
+    .footer-links img{
+        height:50px ;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        float: right;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .footer-links img:hover{
+        opacity: 0.7;
+    }
+    .social-links img {
+        height:50px ;
+        width:50px;
+        border-radius: 50%;
+        object-fit: cover;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .social-links img :hover{
+        opacity: 0.7;
+    }
+    .container-text{
+        margin-top: 30px;
+    }
+    .container-text-2{
+        margin-top: 60px;
+    }
+    .checkboxes{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .checkbox{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .form-input{
+        width:85%;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .query-input{
+        height: 85px;
+        width:85%;
+        margin-top: 25px;
+    }
+    .form-button{
+        height: 60px; 
+        width: 140px;
+        border-radius: 8px;
+        color: white;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* (CSS Scan, 2024) */
+        font-size: 28px; 
+        font-family: roboto ,sans-serif ; /* (The IIE, 2024) */
+        font-weight: 450; /* (The IIE, 2024) */
+        cursor: pointer; /* (W3Schools, 2024) */
+        transition: 0.5s; /* (W3Schools, 2024) */
+        background-color: black;
+    }
+    
+    .form-button:hover { /* (The IIE, 2024) */
+        height: 75px;
+        width: 145px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .email-link{
+        color:blue
+    }
+    .email-link:hover{
+        color: black;
+    }
+}
+
+/*Mobile styling*/
+@media screen and (max-width:768px){
+    .cursor{
+        position: absolute;
+        width: 20px;
+        height:20px;
+        border-radius:50%;
+        background-color: rgba(255,255,255,07);
+        pointer-events: none;
+        animation: fade-out 0.4s ease-out forwards;
+        z-index:1000;
+    }
+
+    @keyframes fade-out{
+        /* Keyframes are used to change an elements style from one css element style to another(W3schools, 2024)*/
+        from{
+            transform:scale(1);
+            opacity: 1;
+        }
+        to{
+            transform: scale(2);
+            opacity:0;
+        }
+    }
+
+    h1{
+        font-family:Merriweather, sans-serif;
+         font-size: 32;
+    }
+
+    h2{
+        font-family:Merriweather, sans-serif;
+        font-size: 28;
+    }
+
+    h3{
+        font-family:Merriweather, sans-serif;
+        font-size: 28;
+    }
+
+    p{
+        font-family:roboto,sans-serif ; font-size: 18;
+    }
+    .tab-links{font-family: Monserrat, sans-serif;}
+
+    .navbar{
+        background-color: black;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .collapse{
+        transition: height 0.3s ease;
+    }
+    .logo-image{
+        height:110px ;
+        width:110px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .tab-item{
+        list-style-type: none;
+        margin: 5px 0;
+    }
+    .tab-links{
+        color: aqua;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family:Merriweather, sans-serif;
+        font-weight: 650;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /*(W3schools, 2024)*/
+    }
+
+    .navbar-nav{
+        display: flex;/*This property is used when trying to display the rendering box of an element (www.w3schools.com, n.d.)*/
+        flex-direction: column;/*This property determines whether the content will be placed in rows or columns*/
+        width: 100%;
+        align-items: center; /*This property aligns items to the center of the container(The IIE, 2024)*/
+        
+    }
+    .navbar-nav a {
+        text-decoration: none; 
+        /*This property determines the state of the text and what modifications can be placed on it(The IIE, 2024)*/
+    }
+    .navbar-nav a:hover{
+        background-color: rgb(108, 223, 223);
+        color: black;
+        border-radius: 5px;
+        text-decoration: none;
+        transform: scale(1.1);
+    
+    }
+    .navbar-brand{
+        color: azure;
+        font-family:Merriweather, sans-serif;
+    }
+
+    .platform-link{
+        height:50px ;
+        width:50px;
+        border-radius: 50%; /*makes the image round (The IIE,2024)*/
+        object-fit: cover;  /*makes the image stay within the container*/
+    }
+
+    .platforms{
+        float: right;
+        margin-bottom: 2rem;
+    }
+
+    .introduction{
+        display: block;
+        align-items: center;
+        
+    }
+    .intro-image{
+        display: none;
+    }
+    
+    .section-light{
+        background-color:azure;
+        padding: 2rem;
+        text-align: center;
+    }
+    .section-dark{
+        background-color: black;
+        padding: 2rem;
+        text-align: center;
+        color: azure;
+    }
+    .heading{
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .map{
+        width: 80%;
+        height: 300px;
+    }
+    
+    .events{
+        display: block;
+        text-align: center;
+    }
+    .Vision-text{
+        float: none;
+        text-align: center;
+        margin-bottom: 1 rem;
+    }
+    
+    .Vision-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .au-image{
+        float: none;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+    }
+
+    .art-grid{
+        margin: 0 auto;
+        grid-template-columns: 1fr; 
+        gap:1rem
+    }
+    .art-grid img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        max-height: 200px;
+        margin: 5px;  
+    }
+    .main-art-piece{
+        height:350px; 
+        width:50%;
+        border-radius: 8px;
+        margin:0 auto;
+        object-fit: cover;
+
+
+    }
+    .most-viewed-pieces{
+        display: block;
+        text-align: center;
+    }
+    .featured-artworks{
+        background-color: black;
+        padding: 20px;
+    }
+    .Favoured-Artworks{
+        background-color: black;
+        padding: 20px;
+    }
+    .card{
+        background-color:white ;
+        margin-bottom: 1rem;
+        }
+    .card-body{
+        text-align: center;
+    }
+    .card-title{
+    margin-bottom: 1rem;
+    }
+    .contributor{
+        height:100px ;
+        width:100px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .footer-links{
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .footer-links img{
+        height:40px ;
+        width:40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .footer-links img:hover{
+        opacity: 0.7;
+    }
+    .g-form {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        border:none;
+    }
+    .checkboxes{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .checkbox{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .form-input{
+        width:85%;
+        height: 30px;
+        border-radius: 8px;
+    }
+    .query-input{
+        height: 65px;
+        width:85%;
+        margin-top: 25px;
+    }
+    .form-button{
+        height: 60px; 
+        width: 140px;
+        border-radius: 8px;
+        color: white;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* (CSS Scan, 2024) */
+        font-size: 28px; 
+        font-family: roboto ,sans-serif ; /* (The IIE, 2024) */
+        font-weight: 450; /* (The IIE, 2024) */
+        cursor: pointer; /* (W3Schools, 2024) */
+        transition: 0.5s; /* (W3Schools, 2024) */
+        background-color: black;
+    }
+    
+    .form-button:hover { /* (The IIE, 2024) */
+        height: 75px;
+        width: 145px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+     .email-link{
+        color:blue
+    }
+    .email-link:hover{
+        color: black;
+    }
+}
+/*Reference List
+
+The IIE. 2024. Web Development (Introduction)[WEDE5020 Module Manual].
+ The Independent Institute of Education: Unpublished.
+
+www.w3schools.com. (n.d.). CSS display property. [online] Available at: https://www.w3schools.com/cssref/pr_class_display.php
+[Accessed 26 Sep. 2024].
+
+www.w3schools.com. (n.d.). CSS grid-template-columns property. [online] Available at: https://www.w3schools.com/cssref/pr_grid-template-columns.php
+[Accessed 26 Sep. 2024].
+
+www.w3schools.com. (n.d.). CSS object-fit Property. [online] Available at: https://www.w3schools.com/css/css3_object-fit.asp 
+[Accessed 26 Sep. 2024].
+
+W3schools.com. 2024. W3Schools.com. [online] Available at: https://www.w3schools.com/cssref/pr_list-style-type.php 
+[Accessed 26 Sep. 2024].
+
+W3schools. 2024. CSS Transitions. [online] Available at: https://www.w3schools.com/css/css3_transitions.asp [Accessed 5 Nov. 2024].
+
+W3schools. 2024. CSS @keyframes Rule. [online] Available at: https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php [Accessed 5 Nov. 2024].
+
+W3schools. 2024. CSS pointer-events property. [online] Available at: https://www.w3schools.com/CSSref/css3_pr_pointer-events.php [Accessed 5 Nov. 2024].
+
+Google Fonts. (n.d.). Google Fonts. [online] Available at: https://fonts.google.com/specimen/Roboto?query=roboto 
+[Accessed 26 Sep. 2024].
+
+Google Fonts. (n.d.). Merriweather. [online] Available at: https://fonts.google.com/specimen/Merriweather?query=merriweather 
+[Accessed 26 Sep. 2024].
+
+*/

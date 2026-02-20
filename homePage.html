@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Introduction to The KA-Arts Galley and workshop">
+    <meta name="description" content="This page serves to introduce users to our inviting and colorful gallery, notifiyng them of when the KA-art galler is hosting events, gining users information about us and prompting them to join our newsletter.">
+    <title>Home</title> <!--The title tag used on the title of the page(The IIE, 2024)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--This script allows for predifrined styles and components like grid layouts that are provided by bootstrap to used to style and improve webpages (Contributors, n.d.)-->
+     
+     <link rel="stylesheet" href="css/Styles.css"><!--This link allows for all webpages to sync with the CSS stylesheet, so changes can be made across all pages simultaneously-->
+    
+     
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md" data-theme ="dark"> <!--using data attributes (developer.mozilla, 2024)-->
+                                        <!-- "navbar-expand" is a class from bootstrap used to controll when the navbar expands(displays a horizotal menu) / shrinks(displays a stacked)-->
+                                        <!--In this case "md" means 768px, meaning that should the page shrink past 768px the navbar will shrink, and vise versa (contributors, n.d.)-->
+        <div class="container">
+                <a class="navbar-brand" href="homePage.html">KA-Arts</a>
+                <!--Adding a hamburgur menu using bootstrap(contributors, n.d.)-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="tab-item">
+                            <a class="tab-links" href="homePage.html">Home Page </a><!--These "a" tags are for applying links to the webpage. This allows for navigation across the website(The IIE, 2024) -->
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-links" href="aboutUs.html">About Us </a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-links" href="ourWork.html">Our Work </a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-links" href="gallery.html">Gallery </a>
+                        </li>
+                        <li class="tab-item">
+                            <a class="tab-links" href="contactUs.html">Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+       
+    </nav>
+    
+    
+
+    <!--The navigation bar that allows the user to navigate between different webpages(The IIE, 2024) -->
+    
+
+
+    <section class="section-light" data-theme="light"> <!--Section tags help divide the website into its parts, usually used to group related content together(www.w3schools.com, n.d.).-->
+       
+        <a href="homePage.html"><!--Internal link to the website's home page (The IIE, 2024)-->
+            <div class="intro-container">
+                <img class="logo-image" src="Images/KA-Arts.png"> <!-- The logo acting as the link to the homepage as demonstrated by (The IIE, 2024)-->
+            </div>
+        </a>
+    
+        <h1 class="heading">HOME</h1>
+        
+       <div class="introduction">
+                <div class="row">
+                    <div class="col">
+                        <center><h2><u>Welcome To  The Gallery</u></h2></center><!--Sub-Heading Tags used for the welcome message--><br>
+                        <p>
+                            Welcome to <i>KA Art Gallery and workshop</i>,
+                            a creative space that supports local talent for those who appreciate visual arts.
+                            We offer a platform for artists who’ve searched long and hard for a place to showcase their artworks and putting themselves on the map as a result. 
+                            Our gallery acts as a hub for creativity, where aspiring and established artists can connect and support each other. Whether you’re an artist looking to have your work displayed for all to see, an enthusiast looking to find new artworks, or someone who’s genuinely passionate about practicing the craft. 
+                            Our organization can support all your artistic endeavors.
+                            Join us in supporting a community where art is appreciated by everyone.
+                        </p>
+                        <a href="contactUs.html" class="btn btn-dark btn-lg" data-theme="dark">Join Us</a><!--the btn.classes are used to create or apply clickable buttons to elements, be it links or inputs (contributors, n.d.) -->
+                    </div>
+               
+                    <div class="col">
+                        <img class="intro-image" src="Images/KA-Arts_Museum_and_Gallery.jpg" width="500rem" height="300px" alt="Gallery_img"><!--(Pixabay, 2024)-->
+                    </div>
+                </div>
+        </div>
+            
+    </section> 
+    
+
+    <section class="section-dark " data-theme="dark">
+        <center><h2><u>What's Happening at Our Gallery?</u></h2></center> <!--The underline tag "<u></u>" used to underline text-->
+        <div class=" row">                                                <!--.row is a class from bootsrap that is used to contain elements into a horizontal grid layout (Contributors, n.d.) -->
+           
+            <div class="col">                                             <!--the ,col class hail from bootstrap. It defines the placement and width of the content thats inside the grid layout (contributors, n.d.).-->
+                <h3>Latest Exhibitions</h3><br>
+                <div class=" events">
+                    <div>
+                        <img src="Images/Painting_workshop_Our_Galley.jpg" width="250" height="250" alt="painting"> <!--(Pixabay, 2024)-->
+                    </div>
+
+                    <div>
+                        <p style="border-bottom: 3px solid white;"> Date: 15 October 2024 <br> Time: 5pm - 9pm <br> Venue: Guggenheim Museum <br>Theme: Contemoporary Art</p>
+                        <br><p> Date: 31 October 2024 <br> Time: 5pm - 9pm <br> Venue: Guggenheim Museum <br>Theme: Clay Sculptures</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="col">
+                <h3>Upcoming Workshops</h3><br>
+                <div class=" events">
+
+                    <div> 
+                    <img src="Images/Sketch_made _at_KA-Arts.jpg" height="250" width="300"><!--(Magaba,2024)-->
+                    </div>
+
+                    <div>
+                        <p style="border-bottom: 3px solid white;">Date: 27-29 October 2024 <br> Time: 2pm - 5pm <br> Venue: Guggenheim Museum <br>Lesson: Introduction to Mosaics</p> <!--Inline sheet styling-->
+                        <br><p>Date: 20-22 October 2024 <br> Time: 2pm - 5pm <br> Venue: Guggenheim Museum <br>Lesson: Introduction to Watercolor and Oli Painting</p>
+                    </div>
+                   
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+   
+    <section class="section-light" data-theme="light">
+        <center><h2><u>Join Our Community</u></h2></center>
+        <div class="introduction">
+            
+            <div class="Join">
+                <h3>Subscribe To Our Newsletter</h3>
+                <p> Get the latest news on upcoming exhibitions, workshops and featured artists staright to your inbox.<br> Our monthly Newsletter is filled with inspiration, exclusive offers, and transparent insights into our local art scenes. <br>Don't miss out and join our creative community today!</p>
+            </div>
+            <div class="Join">
+                <h3>Follow Us</h3>
+                <p>Folllow us on social media to explore more of what we do,<br> from artist spotlights to live event updates.<br> Join our growing community, engage with the local talent,<br> and stay in the loop with all things creative! find us on facbook, Instagram and Inprint.</p>
+            </div>
+            
+        </div>
+        <iframe class="g-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdE1zN1rDk0Lcz2YE7Ng02wZNxOM_g5hBX2K0kkVYqjV_kE9A/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    </section>
+
+    <section class="section-dark " data-theme="dark">
+        <footer>
+            
+            <div class="footer-links">
+                    <!--The other platforms that the user can access-->
+                    
+                    <a href="https://www.instagram.com/kwaz.arts/" target="_blank"> 
+                    <img class="platform-link" src="Images/instagram (1).png">
+                    </a>
+                    <a href="https://web.facebook.com/kwaz.arts?_rdc=1&_rdr" target="_blank">
+                    <img class="platform-link" src="Images/facebook.png">
+                    </a>
+                    <a href="https://www.inprnt.com/gallery/kwazarts/" target="_blank">
+                    <img class="platform-link" src="Images/Inprnt.png">
+                    </a>
+            </div>
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write("Lwazi Magaba ST10434465 | Last modified:")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br> Powered by "Sharp-Sharp" Web Hosting
+        </footer>
+    </section>
+    <script src="javaScript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--Reference List
+The IIE. 2024. Web Development (Introduction)[WEDE5020 Module Manual].
+ The Independent Institute of Education: Unpublished.
+
+Pixabay. 2024. Guggenheim Museum.
+[online] Available at: https://pixabay.com/photos/guggenheim-museum-new-york-usa-2707258/ 
+
+Pixabay. 2024. Painting girl brush.
+ [online].Available at: https://pixabay.com/photos/painting-girl-brush-art-colors-4159435/
+ 
+Canva.2024. [Online].Available At: https://www.canva.com [Accessed 15 August 2024] 
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Buttons. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/components/buttons/#button-tags 
+[Accessed 26 Sep. 2024].
+
+Contributors, B. (n.d.). Quick Start. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start 
+[Accessed 26 Sep. 2024].
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Columns. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/layout/columns/ 
+[Accessed 26 Sep. 2024].
+
+www.w3schools.com. (n.d.). HTML section Tag. [online] Available at: https://www.w3schools.com/tags/tag_section.asp 
+[Accessed 26 Sep. 2024].
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Navbar. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/components/navbar/#nav 
+[Accessed 26 Sep. 2024].
+
+Contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). row columns. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/layout/grid/#row-columns 
+[Accessed 26 Sep. 2024].
+
+developer.mozilla. 2024. Using data attributes - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes [Accessed 5 Nov. 2024].
+-->

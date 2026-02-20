@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Contact The Gallery For More Information.">
+    <meta name="description" content="This page serves to indicate to users that the galley can be contacted through the various methods mentioned in the page, ensuring that the KA-Art Gallery is made reacheable to all who enquire.">
+    <title> Contact US </title><!--The title tag used on the name of the page; Contact Us-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!--(B. Contributors, “Quick Start”)-->
+     <link rel="stylesheet" href="css/Styles.css">
+
+     <style>
+        th,td{border: 1px solid azure}
+        Table{width: 100%;} /*Sized proprtional to the screen*/
+        .category{
+            background-color: aqua;
+            color: black;
+        }
+        td:hover{
+            background-color: azure;
+            color: black;/*When hovering over tthe table the colors will be inversed*/
+        }
+               
+     </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md" data-theme="dark"> <!--using data attributes (developer.mozilla, 2024)-->
+        <!-- "navbar-expand" is a class from bootstrap used to controll when the navbar expands(displays a horizotal menu) / shrinks(displays a stacked)-->
+        <!--In this case "md" means 768px, meaning that should the page shrink past 768px the navbar will shrink, and vise versa (contributors, n.d.)-->
+        <div class="container">
+            <a class="navbar-brand" href="homePage.html">KA-Arts</a>
+            <!--Adding a hamburgur menu using bootstrap(contributors, n.d.)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="tab-item">
+                        <a class="tab-links" href="homePage.html">Home Page </a><!--These "a" tags are for applying links to the webpage. This allows for navigation across the website(The IIE, 2024) -->
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="aboutUs.html">About Us </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="ourWork.html">Our Work </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="gallery.html">Gallery </a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-links" href="contactUs.html">Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav><!--The navigation bar used to allow access to the different webpages available-->
+
+     
+       
+    
+
+    <section class="section-light" data-theme="light">
+
+        <a href="homePage.html"><!--Internal link to the website's home page (The IIE, 2024)-->
+            <img class="logo-image" src="Images/KA-Arts.png"> <!-- The logo acting as the link to the homepage as demonstrated by (The IIE, 2024)-->
+        </a>
+
+        <h1 class="heading">CONTACT US</h1>
+
+        <center><h2><U>Find Us</U></h2></center><br>
+        
+        <div class="row"><!--(Contributors, n.d.)-->
+            <div class="col">
+                
+                    <h3>You can find us here:</h3>
+                    <p>Our address is: <br> 30 park Dr<br> Qgeberha Central<br> Gqberha<br> 6001<br> Phone Number: 06678749859 <br> Email address :<a class="email-link" href="mailto:ST10434465@vcconnect.edu.za">ST10434465@vcconnect.edu.za</a></p> <!--using the email address as a external link to the user email paltform (The IIE, 2024)-->
+        
+                    <p> You can also view our work on any of these platforms:</p>
+                    <div class="social-links">
+                        <!--The other platforms that the user can access-->
+                        <a href="https://www.instagram.com/kwaz.arts/"> 
+                            <img class="platform-link" src="Images/instagram (1).png">
+                        </a>
+                        <a href="https://web.facebook.com/kwaz.arts?_rdc=1&_rdr">
+                            <img class="platform-link" src="Images/facebook.png">
+                        </a>
+                        <a href="https://www.inprnt.com/gallery/kwazarts/">
+                            <img class="platform-link" src="Images/Inprnt.png">
+                        </a>
+                    </div>
+                
+            </div>
+
+            <div class="col">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d105886.0324780325!2d25.5377099!3d-33.9684198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad266e1ef28db%3A0xb7b547af529051de!2sGFI%20Art%20Gallery!5e0!3m2!1sen!2sza!4v1723551699112!5m2!1sen!2sza" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--Postion the text and the map next to eacgh other-->
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark text-light" data-theme="dark">
+        <center><b>Available at these times:</b></center>
+    <center>
+        <Table style = "border: 1px solid black"><!--tTable 1--> <!--A table used to display information to the user;The opening to hours on weekend and weekdays-->
+                                                    <!--The IIE-->
+            <tr>
+                <th class="category">Weekdays</th>
+                <th class="category">Weekend</th>
+            </tr>
+
+            <tr>
+
+                <td>Monday: 7:00 - 18:00</td>
+                <td>Saturday: 7:00 - 15:00</td>
+            </tr>
+            <tr>
+
+                <td>Tuesday: 7:00 - 18:00</td>
+                <td>Sunday: 7:00 - 15:00</td>
+            </tr>
+            <tr>
+
+                <td>Wednesday: 7:00 - 18:00</td>
+            
+            </tr>
+            <tr>
+
+                <td>Thursday: 7:00 - 18:00</td>
+                
+            </tr>
+            <tr>
+
+                <td>Friday: 7:00 - 18:00</td>
+                
+            </tr>
+
+
+        </Table>
+    </center>
+    </section>
+    <section class="section-light" data-theme="light">
+        <center><u><h2>Get Involved</h2></u></center><br>
+    <form action="mailto:ST10434465@vcconnect.edu.za" method = "post" enctype="text/plain" name="form" id="form" class="contact-form" onsubmit="validateEmail()"><!--Form used to recieve information and mail it to the email address listed.(The IIE, 2024)-->
+
+        <h3>Let Us Know What You Want to Do</h3><!--Sub-Heading tag used-->
+        <div class="checkboxes">
+
+            <input class="checkbox" type="checkbox" id="Interest"name="Skill Aquiring" value="Skill Aquiring"><!--The checkbox input is used to hace the user choose which option apply to the user. -->
+            <label for="Interest1">I am Interested in learning visual Arts.</label><br><!--with more than one option being selectable (The IIE, 2024)-->
+
+            <input class="checkbox" type="checkbox" id="Interest"name="Content Promotion" value="Content Promotion">
+            <label for="Interest2">I want to promote my work on your platform.</label><br>
+
+            <input class="checkbox" type="checkbox" id="Interest"name="Art Enthusiast" value="Art Enthusiast">
+            <label for="Interest3">I am interested in buying the artworks on sale.</label>
+
+        </div>
+        <div class="row">
+            <center><h3>Fill In Here For Any Queries</h3></center>
+            <div class="col">
+                <label for="firstName">Name & Surname:</label><br>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="e.g Josh" required><br>
+                <!--An Input box for the user to enter their name and surname-->
+    
+                <label for="contactNumber">Contact Number:</label><br>
+                <input class="form-input" type="number" id="contactNumber" name="contactNumber" placeholder=" e.g 1234567890" required><br>
+                <!--An input box for the user to enter their contact number-->
+    
+                <label for="email">Email Address:</label><br>
+                <input class="form-input" type="text" id="email" name="email" placeholder="e.g myemail@gmail.com" required><br><br>
+                <!--An input box for the user to enter their contact number, as Demonstrated by (The IIE, 2024) -->
+            </div>
+    
+            <div class="col">
+    
+                <textarea class="query-input" required></textarea><br><br><!--Text areas are used for giving the user to enter a message-->
+                <div class="buttons">
+                    <input class="form-button" type="submit" value="Submit"> <!-- (IIE, 2024) -->
+                    <input class="form-button" type="reset" value="Clear">
+                </div>
+
+            </div>
+        </div>
+        
+    </form>
+
+    </section>
+    
+    <section class="section-dark" data-theme="dark">
+        <footer>
+            
+            <div class="footer-links">
+                <!--The other platforms that the user can access-->
+                
+                <a href="https://www.instagram.com/kwaz.arts/" target="_blank"> 
+                    <img class="platform-link" src="Images/instagram (1).png">
+                </a>
+                <a href="https://web.facebook.com/kwaz.arts?_rdc=1&_rdr" target="_blank">
+                    <img class="platform-link" src="Images/facebook.png">
+                </a>
+                <a href="https://www.inprnt.com/gallery/kwazarts/" target="_blank">
+                    <img class="platform-link" src="Images/Inprnt.png">
+                </a>
+            </div>
+            <script>
+                var theDate = new Date()
+                document.write("&copy; " + theDate.getFullYear())
+                document.write("Lwazi Magaba ST10434465 | Last modified:")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br> Powered by "Sharp-Sharp" Web Hosting
+        </footer><!--The footer That details the Student Information-->
+    </section>
+    <script src="javaScript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--Reference List
+
+The IIE. 2024. Web Development (Introduction)[WEDE5020 Module Manual].
+ The Independent Institute of Education: Unpublished.
+
+Address: 30 Park Dr, Gqeberha Central, Gqeberha, 6001
+https://maps.app.goo.gl/oMgJakQr2aPkcywV9
+
+contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). Navbar. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/components/navbar/#nav 
+[Accessed 26 Sep. 2024].
+
+Contributors, M.O., Jacob Thornton, and Bootstrap (n.d.). row column gutters. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/layout/gutters/#row-columns-gutters 
+[Accessed 26 Sep. 2024].
+
+Contributors, B. (n.d.). Quick Start. [online] getbootstrap.com. Available at: https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start 
+[Accessed 26 Sep. 2024].
+
+developer.mozilla. 2024. Using data attributes - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes [Accessed 5 Nov. 2024].
+
+-->
+
